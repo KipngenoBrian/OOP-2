@@ -1,0 +1,11 @@
+class DiscountStrategy:
+    def calculate(self, amount):
+        return amount
+
+class RegularCustomerDiscount(DiscountStrategy):
+    def calculate(self, amount):
+        return amount * 0.9
+
+class VIPCustomerDiscount(DiscountStrategy):
+    def calculate(self, amount):
+        return amount * 0.8

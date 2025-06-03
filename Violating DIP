@@ -1,0 +1,10 @@
+class MySQLDatabase:
+    def save(self, data):
+        print("Saving to MySQL")
+
+class DataManager:
+    def __init__(self):
+        self.db = MySQLDatabase()
+
+    def save_data(self, data):
+        self.db.save(data)

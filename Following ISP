@@ -1,0 +1,11 @@
+class Printer:
+    def print(self):
+        pass
+
+class Scanner:
+    def scan(self):
+        pass
+
+class PrintOnlyMachine(Printer):
+    def print(self):
+        print("Printing")
